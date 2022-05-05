@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+}
+h2,
+h4 {
+  margin: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  min-height: 69px;
+  border-bottom: 1px solid seashell;
+  top: 0;
+  background-color: #000;
+  z-index: 1;
+}
+.header__logo {
+  margin: 0 0 0 10px;
+  max-height: 50px;
+  width: 100%;
+}
+.header__nav {
+  margin: 0 10px 0 0;
+}
+.header__nav a {
+  color: seashell;
+}
+
+/* Mission */
+.mission {
+  position: relative;
+  margin: 69px auto 0 auto;
+}
+.mission__background {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  max-height: 700px;
+}
+.mission__text {
+  background: #000;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+/* Featured */
+.featured {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto 10px;
+}
+.featured__items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+}
+.item img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* Locations */
+.locations {
+  position: relative;
+}
+.locations__background {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.locations__background h2 {
+  margin-top: 0;
+}
+.locations__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex: auto;
+  position: relative
+}
+.card {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 15px 20px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner p > a,
+.banner h5 >a,
+.banner p > a:visited,
+.banner h5 > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.banner p > a:hover,
+.banner h5 > a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: left;
+  margin-left: 20px;
+}
